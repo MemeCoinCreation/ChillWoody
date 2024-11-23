@@ -1,0 +1,243 @@
+
+/* General styles */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f7faf3; /* Light background */
+  color: #333;
+  scroll-behavior: smooth; /* Enables smooth scrolling */
+}
+
+/* Navbar */
+.navbar {
+  background-color: #F52828; /* Bright green */
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  text-align: center;
+}
+
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.navbar a {
+  font-size: 1rem;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #fdda24; /* Toy Story yellow */
+}
+
+/* Hero Section */
+.hero-section {
+  text-align: center;
+  background: url('toy-story-andys-room-wallpaper.jpeg') center/cover no-repeat; /* Apply the background to the hero section */
+  padding: 40px 20px;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers content horizontally */
+}
+ /* Video Styling */
+ .hero-video {
+      width: 30%; /* Video nimmt die gesamte Breite ein */
+      height: auto; /* Passe die Höhe nach Bedarf an */
+      object-fit: cover; /* Füllt den Bereich vollständig */
+      border: none; /* Entfernt den Rahmen */
+      border-radius: 20px; /* Optional: Abgerundete Ecken */
+    }
+
+.hero-image {
+  width: 250px;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px; /* Adds spacing between image and text */
+}
+
+.title {
+  font-family: 'Peace Sans', sans-serif;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #fdda24; /* Toy Story yellow */
+  text-shadow: 2px 2px 0 #0033a0, 4px 4px 0 #d22d27; /* Toy Story blue and red */
+}
+
+.subtitle {
+  font-size: 30px;
+  font-family: "Smokum", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* About Section */
+.about-section {
+  text-align: center;
+  font-size: 30px;
+  line-height: 1.4;
+  padding-left: 600px;
+  padding-right: 600px;
+}
+
+.about-section {
+  font-family: "Smokum", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Tokenomics Section */
+.tokenomics-container {
+  display: flex;            /* Aktiviert Flexbox */
+  justify-content: center;  /* Zentriert horizontal */
+  align-items: center;      /* Zentriert vertikal */
+  padding: 40px 0;          /* Optional: Abstand nach oben und unten */
+  min-height: 80px;        /* Minimale Höhe für die Tokenomics-Sektion */
+}
+.tokenomics-box {
+  display: flex; /* Layout nebeneinander */
+  flex-wrap: wrap; /* Bild und Text umbrechen auf kleinen Bildschirmen */
+  align-items: center;
+  justify-content: center;
+  gap: 20px; /* Abstand zwischen Bild und Text */
+}
+
+.tokenomics-image {
+  width: 400px; /* Bildbreite */
+  height: auto; /* Höhe passt sich automatisch an */
+  border-radius: 10px; /* Optionale abgerundete Ecken */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Schatten um das Bild */
+  transition: transform 0.3s ease; /* Smooth Hover Effekt */
+}
+
+.tokenomics-image:hover {
+  transform: scale(1.1); /* Leichtes Vergrößern beim Hover */
+}
+
+.tokenomics-section {
+  max-width: 600px;         /* Maximale Breite für die Sektion */
+  width: 60%;               /* Breite wird auf 80% des Containers gesetzt */
+  padding: 40px 100px;      /* Innenabstand für die Sektion */
+  background-color: #33F56A; /* Lime green */
+  text-align: center;
+  margin: 0 auto ;
+  border-radius: 15px;      /* Abgerundete Ecken */
+  box-sizing: border-box;   /* Verhindert das Überlaufen durch Padding */
+  
+  /* Box-Schatten für den 3D-Effekt */
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2), -4px -4px 10px rgba(0, 0, 0, 0.1);
+  
+   /* Übergang für Transformationen und Schatten */
+  transition: transform 1s ease, box-shadow 0.3s ease; /* 1s für Transformation, 0.3s für Schatten */
+}
+
+/* Optional: Hover-Effekt für noch stärkeres 3D-Gefühl */
+.tokenomics-section:hover {
+  transform: perspective(500px) rotateX(15deg) rotateY(15deg) translateZ(20px); /* Z-Translation für Tiefe */
+  box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.3), -8px -8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.tokenomics p {
+  margin: 10px 0;
+}
+
+/* Memes Section */
+.memes-section {
+  padding: 40px 20px;
+  background-color: #ffffff;
+  text-align: center;
+  overflow: hidden; /* Verhindert das Anzeigen von Inhalten außerhalb des Bereichs */
+}
+
+.memes-gallery {
+  display: flex;
+  gap: 60px;
+  animation: scroll-horizontal 20s linear infinite; /* Animation für horizontales Scrollen */
+}
+
+.meme-image, .meme-gif {
+  width: 200px; /* Größe der Memes */
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.meme-image:hover, .meme-gif:hover {
+  transform: scale(1.1); /* Zoom-Effekt beim Hover */
+}
+
+/* Keyframes für horizontale Scroll-Animation */
+@keyframes scroll-horizontal {
+  0% {
+    transform: translateX(0); /* Startposition: außerhalb des rechten Bildschirmrands */
+  }
+  100% {
+    transform: translateX(-100%); /* Endposition: außerhalb des linken Bildschirmrands */
+  }
+}
+  
+    
+/* Community Section */ 
+.community-section {
+  padding: 40px 20px;
+  background-color: #e5e5e5; /* Greenish-white */
+  text-align: center;
+}
+
+.community-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.pump-button, .dex-button, .twitter-button, .telegram-button {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+  background-color: #F52828; /* Bright green */
+  border: none;
+  border-radius: 10px;
+  padding: 15px 20px;
+  cursor: pointer;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.dex-button:hover {
+  transform: scale(1.1);
+  background-color: #F52828; /* Darker green */
+}
+
+.pump-button:hover {
+  transform: scale(1.1);
+  background-color: #F52828; /* Darker green */
+}
+
+.twitter-button:hover {
+  transform: scale(1.1);
+  background-color: #F52828; /* Twitter blue */
+}
+
+.telegram-button:hover {
+  transform: scale(1.1);
+  background-color: #F52828; /* Telegram blue */
+}
+
+/* Footer */
+footer {
+  background-color: #F5C927; 
+  color: #ffffff;
+  text-align: center;
+  padding: 5px 5px;
+}
